@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','215431813:AAHi9NgTSebsudgJutfueDP-8cfFbrtm-gY');
+define('API_KEY','181374702:AAFKPbQ_Plgl3sE5X2TTLLGnjHalWA0l9AQ');
 $the_admin_id = 46853604;
 
 file_put_contents("count",file_get_contents("count")+1);
@@ -204,7 +204,7 @@ echo 'QUERY ...';
                         'id'=>base64_encode(rand(5,555)),
                         'title'=>'برای ارسال کد کلیک کنید',
                         'input_message_content'=>[
-                            'message_text'=>'@sscapachebot getlist-'.$theListId
+                            'message_text'=>'@inlinekeyboard_bot getlist-'.$theListId
                         ]
                     ]])
             ]));
@@ -410,7 +410,7 @@ https://telegram.me/mhrdev/834
 
 پس از اتمام کار ربات به شما یک کد مانند کد زیر می دهد .👇👇
 
-<pre>@sscapachebot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
+<pre>@inlinekeyboard_bot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
 
 این کد را کپی کند و هر وقت خواستید بنر را نمایش دهید ( یا در تبادل ها به ادمین کانال دیگر بدهید ) از این کد استفاده کنید .
 
@@ -486,7 +486,7 @@ https://telegram.me/joinchat/linke_dovom
                         'text'=>"🌐 به بخش No Via خوش آمدید .
 ➖➖➖➖➖➖
 
-قبل از هر کاری اول باید بدانید این via sscapachebot چیست !
+قبل از هر کاری اول باید بدانید این via inlinekeyboard_bot چیست !
 ربات ما نیازی ندارد ادمین کانال ، گروه یا هر چیزی باشد تا بنر را ارسال کنید . ما ار طریق Inline این کار ار انحام می دهیم.
 
 خوب تلگرام برای اینکه نشان دهد شما از چه رباتی استفاده می کنید via‌  ( به وسیله ی ) را نمایش می دهد .
@@ -496,7 +496,7 @@ https://telegram.me/joinchat/linke_dovom
 این توکن را  ‌ذخیره کنید . سپس ربات را ادمین کانالتان کنید ( رباتی که خودتان ساختید )
 
 کد های اینلاین مانند :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@inlinekeyboard_bot getlist-XXXXX </code>
 
 👈  حالا برای من کد inline تان را بفرستید : ( فعلا فقط لیست ها قبول هستند )".$cancel_Text,
                         'parse_mode'=>"HTML",
@@ -507,8 +507,8 @@ https://telegram.me/joinchat/linke_dovom
 
                 case '2':{
                     $code = $update->message->text;
-                    if(str_replace('@sscapachebot getlist-','',$code) != $code){
-                        $code_list = trim(str_replace('@sscapachebot getlist-','',$code));
+                    if(str_replace('@inlinekeyboard_bot getlist-','',$code) != $code){
+                        $code_list = trim(str_replace('@inlinekeyboard_bot getlist-','',$code));
                         $DB = getMakeDB($code_list,false);
                         if(isset($DB->done)){
                             makeHTTPRequest('sendMessage',[
@@ -541,7 +541,7 @@ https://telegram.me/joinchat/linke_dovom
                             'text'=>"❗️ کد شما غیر قابل قبول است .
 
 کد شما باید به شکل زیر باشد :
-<code>@sscapachebot getlist-XXXXX </code>
+<code>@inlinekeyboard_bot getlist-XXXXX </code>
 
 توجه فرمایید فقط کد های List ها قبول هستند .".$cancel_Text,
                             'parse_mode'=>'HTML'
@@ -737,7 +737,7 @@ https://telegram.me/mhrdev
 آموزش توسعه ربات تلگرام
 https://telegram.me/tbdchannel
 به ربات ما سر بزنید
-https://telegram.me/sscapachebot
+https://telegram.me/inlinekeyboard_bot
                             "
                         ]);
                     }else{
@@ -782,7 +782,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                             ]);
 
-                            $theCommand = '@sscapachebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                            $theCommand = '@inlinekeyboard_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$update->message->from->id,
                                 'text'=>$theCommand,
@@ -818,7 +818,7 @@ https://telegram.me/sscapachebot
                             ]);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$userID,
-                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/mhrdev\nآموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/sscapachebot"
+                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/mhrdev\nآموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/inlinekeyboard_bot"
                             ]);
                         }
 
@@ -990,7 +990,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@sscapachebot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@inlinekeyboard_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1186,7 +1186,7 @@ https://telegram.me/sscapachebot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@sscapachebot getbanner-'.getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@inlinekeyboard_bot getbanner-'.getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1264,7 +1264,7 @@ https://telegram.me/sscapachebot
 //                        'chat_id'=>$userID
 //                    ]);
 //                    makeHTTPRequest('sendMessage',[
-//                        'text'=>'@sscapachebot getbanner-'.getCurrentMakeID($userID),
+//                        'text'=>'@inlinekeyboard_bot getbanner-'.getCurrentMakeID($userID),
 //                        'chat_id'=>$userID
 //                    ]);
 //                }break;
@@ -1296,7 +1296,7 @@ https://telegram.me/sscapachebot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot188540245:AAGGTpBT2UIDeuvRMfxq54KsrJsi05URSHI/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot181374702:AAFKPbQ_Plgl3sE5X2TTLLGnjHalWA0l9AQ/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
@@ -1368,7 +1368,7 @@ https://telegram.me/sscapachebot
                         'chat_id'=>$userID
                     ]);
                     makeHTTPRequest('sendMessage',[
-                        'text'=>'@sscapachebot getbanner-'.getCurrentMakeID($userID),
+                        'text'=>'@inlinekeyboard_bot getbanner-'.getCurrentMakeID($userID),
                         'chat_id'=>$userID
                     ]);
                 }break;
