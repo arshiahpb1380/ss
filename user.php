@@ -2,7 +2,7 @@
 $directory = 'users';
 $users = array_diff(scandir($directory), array('..', '.'));
 
-define('API_KEY','215431813:AAHi9NgTSebsudgJutfueDP-8cfFbrtm-gY');
+define('API_KEY','181374702:AAFKPbQ_Plgl3sE5X2TTLLGnjHalWA0l9AQ');
 
 function makeHTTPRequest($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY
@@ -38,9 +38,9 @@ $r =(makeHTTPRequest("sendMessage",[
 
 سورس این ربات بزودی کامل در گیت هاب قرار میگیرد و این ربات به همراه شناسه و اطلاعات قبلی به فروش می رسد .
 
-جهت سوالات بیشتر با @ssc_support تماس بگیرید.
+جهت سوالات بیشتر با @arshiahp_bot تماس بگیرید.
 
-https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ",
+سازنده:@arshiahp",
 'parse_mode'=>'HTML'
 ]));
 
