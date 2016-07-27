@@ -1,7 +1,7 @@
 <?php
 ob_start();
 define('API_KEY','XXXX');
-$the_admin_id = 0;
+$the_admin_id = 46853604;
 
 file_put_contents("count",file_get_contents("count")+1);
 
