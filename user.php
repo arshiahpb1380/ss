@@ -2,7 +2,7 @@
 $directory = 'users';
 $users = array_diff(scandir($directory), array('..', '.'));
 
-define('API_KEY','220881773:AAGkt5QQ35id8ZU1mKTqdCFXxD1hE5UEW70');
+define('API_KEY','197246921:AAGY16pVMUiPnQjWGYEC-6Q5kPCO-AC9OWM');
 
 function makeHTTPRequest($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY
