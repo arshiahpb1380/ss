@@ -1,16 +1,16 @@
 <?php
 ob_start();
-define('API_KEY','181374702:AAFKPbQ_Plgl3sE5X2TTLLGnjHalWA0l9AQ');
+define('API_KEY','220881773:AAGkt5QQ35id8ZU1mKTqdCFXxD1hE5UEW70');
 $the_admin_id = 46853604;
 
 file_put_contents("count",file_get_contents("count")+1);
 
-$ad_btn='آموزش های رایگان برنامه نویسی';
-$ad_url='http://telegram.me/cplearn';
-$ad_text = "1⃣ در تلگـ ـلیست، کانال خودتون رو به رایگان در مرجع کانالهای تلگرام فارسی قرار بدید، به رايگان تبليغ و عضوگيرى كنيد.
-<a href='http://www.teleglist.com/?bot'>به رایگان در تلگـ ـلیست کانال خود را ثبت کنید</a>
+$ad_btn='سازنده ربات';
+$ad_url='http://telegram.me/arshiahp';
+$ad_text = "ربات ضد اسپم ما
+<a href='https://telegram.me/Telespry_bot'>ربات ضد اسپم ما</a>
 ➖➖➖➖➖➖
-ارایه انواع آموزش برنامه نویسی و طراحی وب...برای کسب اطالاعات بیشتر در کانال سایت عضو بشید.";
+انتقادات و پیشنهادات خود را از طریق ربات @arshiahp_bot با ما در میان بگذارید.";
 
 function getUserLocation($uid,$default){
     $cached = apc_fetch('location-'.$uid);
@@ -204,7 +204,7 @@ echo 'QUERY ...';
                         'id'=>base64_encode(rand(5,555)),
                         'title'=>'برای ارسال کد کلیک کنید',
                         'input_message_content'=>[
-                            'message_text'=>'@inlinekeyboard_bot getlist-'.$theListId
+                            'message_text'=>'@inlinekey_bot getlist-'.$theListId
                         ]
                     ]])
             ]));
@@ -397,26 +397,21 @@ file_put_contents('ola',ob_get_clean());
         $helpTXT = "🌐      به راهنمای ربات خوش آمدید  👍
 ➖➖➖➖➖➖➖
 
-آموزش کامل ویدیویی :
-https://telegram.me/mhrdev/834
 
 این ربات به شما این امکان را می دهد که برای کانال های خود یک بنر با عکس و دکمه شیشه ایی پیاده کنید.
 
 🌐🌐‼️ آپدیت جدید هم پیاده شد ، می توانید لیست تبادل با دکمه شیشه ایی پیاده کنید
-توضیحات آخر آموزش
 
 برای استفاده از ربات شما باید ابتدا بر روی /newtab کلیک کنید .
 سپس ربات از شما یک سری سوال می پرسد و شما باید اطلاعات کانالتان را وارد کنید.
 
 پس از اتمام کار ربات به شما یک کد مانند کد زیر می دهد .👇👇
 
-<pre>@inlinekeyboard_bot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
+<pre>@inlinekey_bot d6cdbea45b238632bdd6d11dcf7fe98f </pre>
 
 این کد را کپی کند و هر وقت خواستید بنر را نمایش دهید ( یا در تبادل ها به ادمین کانال دیگر بدهید ) از این کد استفاده کنید .
 
 استفاده از کد هم به این شکل هست که در فیلد مربوط به چت آن را پیست می کنید ( ربات اینلاین هست و مانند همه ی ربات های اینلاین‌)‌و منتظر می مانید تا بنر شما لود شود. سپس روی آن کلیک کنید
-
-تصویر زیر یک مثال است :‌👇👇👇👇
 
 »» آموزش پیاده کردن لیست تبادل
 
@@ -443,8 +438,8 @@ https://telegram.me/joinchat/linke_dovom
 
 سپس ربات به شما کد می دهد .
 
-کد ایی که ربات به شما می دهد را مانند تصویر زیر استفاده کنید .";
-        $imageID = 'AgADBAADQ6oxG_sS0QWIeBEDRy1gg9sVQxkABPxnx4JtVvzC6j4CAAEC';
+کدی که ربات به شما می دهد را با حالت اینلاین استفاده کنید.";
+        $imageID = '';
         makeHTTPRequest('sendMessage',[
             'chat_id'=>$userID,
             'text'=>$helpTXT,
@@ -453,7 +448,7 @@ https://telegram.me/joinchat/linke_dovom
         makeHTTPRequest('sendPhoto',[
             'chat_id'=>$userID,
             'photo'=>$imageID,
-            'caption'=>'ابتدا صبر کنید تا لیست لود شود.'
+            'caption'=>''
         ]);
         die;
     }
@@ -486,7 +481,7 @@ https://telegram.me/joinchat/linke_dovom
                         'text'=>"🌐 به بخش No Via خوش آمدید .
 ➖➖➖➖➖➖
 
-قبل از هر کاری اول باید بدانید این via inlinekeyboard_bot چیست !
+قبل از هر کاری اول باید بدانید این via inlinekey_bot چیست !
 ربات ما نیازی ندارد ادمین کانال ، گروه یا هر چیزی باشد تا بنر را ارسال کنید . ما ار طریق Inline این کار ار انحام می دهیم.
 
 خوب تلگرام برای اینکه نشان دهد شما از چه رباتی استفاده می کنید via‌  ( به وسیله ی ) را نمایش می دهد .
@@ -496,7 +491,7 @@ https://telegram.me/joinchat/linke_dovom
 این توکن را  ‌ذخیره کنید . سپس ربات را ادمین کانالتان کنید ( رباتی که خودتان ساختید )
 
 کد های اینلاین مانند :
-<code>@inlinekeyboard_bot getlist-XXXXX </code>
+<code>@inlinekey_bot getlist-XXXXX </code>
 
 👈  حالا برای من کد inline تان را بفرستید : ( فعلا فقط لیست ها قبول هستند )".$cancel_Text,
                         'parse_mode'=>"HTML",
@@ -507,8 +502,8 @@ https://telegram.me/joinchat/linke_dovom
 
                 case '2':{
                     $code = $update->message->text;
-                    if(str_replace('@inlinekeyboard_bot getlist-','',$code) != $code){
-                        $code_list = trim(str_replace('@inlinekeyboard_bot getlist-','',$code));
+                    if(str_replace('@inlinekey_bot getlist-','',$code) != $code){
+                        $code_list = trim(str_replace('@inlinekey_bot getlist-','',$code));
                         $DB = getMakeDB($code_list,false);
                         if(isset($DB->done)){
                             makeHTTPRequest('sendMessage',[
@@ -528,7 +523,7 @@ https://telegram.me/joinchat/linke_dovom
 
 توجه کنید که حتما ربات را ادمین کانالتان کرده باشید و شناسه را با @ ارسال کنید .
 
-برای مثال @mhrdev .
+برای مثال @username .
 
 این بخش اجباری هست .".$cancel_Text,
                                 'parse_mode'=>'HTML'
@@ -541,7 +536,7 @@ https://telegram.me/joinchat/linke_dovom
                             'text'=>"❗️ کد شما غیر قابل قبول است .
 
 کد شما باید به شکل زیر باشد :
-<code>@inlinekeyboard_bot getlist-XXXXX </code>
+<code>@inlinekey_bot getlist-XXXXX </code>
 
 توجه فرمایید فقط کد های List ها قبول هستند .".$cancel_Text,
                             'parse_mode'=>'HTML'
@@ -732,12 +727,12 @@ https://telegram.me/joinchat/linke_dovom
                         ]);
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>"آموزش های رایگان برنامه نویسی
-https://telegram.me/mhrdev
-آموزش توسعه ربات تلگرام
-https://telegram.me/tbdchannel
-به ربات ما سر بزنید
-https://telegram.me/inlinekeyboard_bot
+                            'text'=>"سازنده ربات
+https://telegram.me/arshiahp
+ربات ضد اسپم ما
+https://telegram.me/Telespry_bot
+به ربات ما رای بدهید.
+https://telegram.me/storebot?start=inlinekey_bot
                             "
                         ]);
                     }else{
@@ -782,7 +777,7 @@ https://telegram.me/inlinekeyboard_bot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                             ]);
 
-                            $theCommand = '@inlinekeyboard_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                            $theCommand = '@inlinekey_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$update->message->from->id,
                                 'text'=>$theCommand,
@@ -818,7 +813,7 @@ https://telegram.me/inlinekeyboard_bot
                             ]);
                             makeHTTPRequest('sendMessage',[
                                 'chat_id'=>$userID,
-                                'text'=>"آموزش های رایگان برنامه نویسی\nhttps://telegram.me/mhrdev\nآموزش توسعه ربات تلگرام\nhttps://telegram.me/tbdchannel\nبه ربات ما سر بزنید\nhttps://telegram.me/inlinekeyboard_bot"
+                                'text'=>"سازنده ربات:\nhttps://telegram.me/arshiahp\nربات ضد اسپم ما:\nhttps://telegram.me/Telespry_bot\nبه ربات ما سر بزنید\nhttps://telegram.me/inlinekey_bot"
                             ]);
                         }
 
@@ -910,7 +905,7 @@ https://telegram.me/inlinekeyboard_bot
                         var_dump($DB);
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>"✅ آفرین ! متن دکمه شماره {$index} رو ثبت کردی .
+                            'text'=>"آفرین متن این دکمه رو ثبت کردی! ✅
 
 حالا باید یک لینک معتبر براش ارسال کنی .
 
@@ -951,7 +946,7 @@ https://telegram.me/inlinekeyboard_bot
                         setUserStep($userID,'3');
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>"✅ ایول ! لینک دکمه {$index} ثبت شد .
+                            'text'=>"ایول لینک این دکمه رو هم ثبت کردی! ✅
 
 نگا کن الان دکمه های قبلیت کامل شدن . اگر میخوای دکمه جدید بسازی متنش رو بفرست .
 
@@ -990,7 +985,7 @@ https://telegram.me/inlinekeyboard_bot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@inlinekeyboard_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@inlinekey_bot getlist-'.ListTab::getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1104,7 +1099,7 @@ https://telegram.me/inlinekeyboard_bot
                         var_dump($DB);
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>"✅ آفرین ! متن دکمه شماره {$index} رو ثبت کردی .
+                            'text'=>"آفرین متن این دکمه رو ثبت کردی! ✅
 
 حالا باید یک لینک معتبر براش ارسال کنی .
 
@@ -1145,7 +1140,8 @@ https://telegram.me/inlinekeyboard_bot
                         setUserStep($userID,'4');
                         makeHTTPRequest('sendMessage',[
                             'chat_id'=>$userID,
-                            'text'=>"✅ ایول ! لینک دکمه {$index} ثبت شد .
+                            'text'=>"ایول لینک این دکمه رو هم ثبت کردی! ✅
+							
 
 نگا کن الان دکمه های قبلیت کامل شدن . اگر میخوای دکمه جدید بسازی متنش رو بفرست .
 
@@ -1186,7 +1182,7 @@ https://telegram.me/inlinekeyboard_bot
 اگر بد توضیح دادم روی /help کلیک کن راهنمایی مفصل داره !'
                     ]);
 
-                    $theCommand = '@inlinekeyboard_bot getbanner-'.getCurrentMakeID($update->message->from->id);
+                    $theCommand = '@inlinekey_bot getbanner-'.getCurrentMakeID($update->message->from->id);
                     makeHTTPRequest('sendMessage',[
                         'chat_id'=>$update->message->from->id,
                         'text'=>$theCommand,
@@ -1241,7 +1237,7 @@ https://telegram.me/inlinekeyboard_bot
 //                        updateDB(getCurrentMakeID($userID), $DB);
 //                        setUserStep($userID, '5');
 //                        makeHTTPRequest('sendMessage', [
-//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @mhrdev می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+//                            'text' => "🌐   شناسه کانال را بدهید \nشناسه ها مانند @username می باشند\n\nاگر کانال شناسه ندارد کامند /skipstep را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
 //                            'chat_id' => $userID
 //                        ]);
 //                    }else{
@@ -1254,7 +1250,7 @@ https://telegram.me/inlinekeyboard_bot
 //
 //                case '5':{
 //                    $DB = getMakeDB(getCurrentMakeID($userID));
-//                    $DB->f->chid = "@mhrdev";
+//                    $DB->f->chid = "@arshiahp";
 //                    $DB->done = true;
 //                    updateDB(getCurrentMakeID($userID),$DB);
 //                    setUserStep($userID,'1');
@@ -1264,7 +1260,7 @@ https://telegram.me/inlinekeyboard_bot
 //                        'chat_id'=>$userID
 //                    ]);
 //                    makeHTTPRequest('sendMessage',[
-//                        'text'=>'@inlinekeyboard_bot getbanner-'.getCurrentMakeID($userID),
+//                        'text'=>'@inlinekey_bot getbanner-'.getCurrentMakeID($userID),
 //                        'chat_id'=>$userID
 //                    ]);
 //                }break;
@@ -1296,7 +1292,7 @@ https://telegram.me/inlinekeyboard_bot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot181374702:AAFKPbQ_Plgl3sE5X2TTLLGnjHalWA0l9AQ/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot220881773:AAGkt5QQ35id8ZU1mKTqdCFXxD1hE5UEW70/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
@@ -1344,7 +1340,7 @@ https://telegram.me/inlinekeyboard_bot
                         updateDB(getCurrentMakeID($userID),$DB);
                         setUserStep($userID,'10');
                         makeHTTPRequest('sendMessage',[
-                            'text'=>"شناسه کانال را بدهید. مانند @mhrdev\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
+                            'text'=>"شناسه کانال را بدهید. مانند @username\n\nاگر کانال شناسه ندارد کامند /skipstep  را بزنید\nجهت انصراف ، کامند /cancel را وارد کنید",
                             'chat_id'=>$userID
                         ]);
                     }else{
@@ -1358,7 +1354,7 @@ https://telegram.me/inlinekeyboard_bot
 
                 case '10':{
                     $DB = getMakeDB(getCurrentMakeID($userID));
-                    $DB->s->chid = "@mhrdev";
+                    $DB->s->chid = "@arshiahp";
                     $DB->done = true;
                     updateDB(getCurrentMakeID($userID),$DB);
                     setUserStep($userID,'1');
@@ -1368,7 +1364,7 @@ https://telegram.me/inlinekeyboard_bot
                         'chat_id'=>$userID
                     ]);
                     makeHTTPRequest('sendMessage',[
-                        'text'=>'@inlinekeyboard_bot getbanner-'.getCurrentMakeID($userID),
+                        'text'=>'@inlinekey_bot getbanner-'.getCurrentMakeID($userID),
                         'chat_id'=>$userID
                     ]);
                 }break;
@@ -1378,18 +1374,18 @@ https://telegram.me/inlinekeyboard_bot
 
         default:{
             $links = [
-                'tbd'=>'https://telegram.me/joinchat/BdES-z-VdLwCVkbsFxggvg',
-                'tbd_c'=>'https://telegram.me/joinchat/BdES-z-8OoIwyyLePo-_aw',
-                'mhrdev'=>'https://telegram.me/joinchat/BdES-zwBMnQM1W88YwjSpg',
-                'mhrdev_c'=>'https://telegram.me/joinchat/BdES-zwJKKGeFT8434LVsQ'
+                'tbd'=>'https://telegram.me/joinchat/BdES-z-VdLVkbsFxggvg',
+                'tbd_c'=>'https://telegram.me/joinchat/BdES-z-8OowyyLePo-_aw',
+                'arshiahp'=>'https://telegram.me/arshiahp',
+                'antispam bot'=>'https://telegram.me/Telespry_bot'
             ];
             var_dump(makeHTTPRequest('sendMessage',[
                 'chat_id'=>$userID,
-                'text'=>"🌐به ربات دکمه شیشه ایی خوب آمدید
+                'text'=>"🌐به ربات دکمه شیشه ای خوش آمدید!
 ➖➖➖➖➖➖➖
-اگر می خواهید با ربات و روش کار آن آشنا شوید کامند /help را وارد کنید .
+برای آشنا شدن با ربات و روش کار آن دستور /help را بفرستید.
 
-این ربات به شما این امکان می دهد که برای کانال خود یک بنر با عکس و دکمه شیشه ایی پیاده کنید .
+این ربات به شما این امکان را می دهد تا برای کانال خود یک بنر با عکس و دکمه شیشه ای تهیه کنید!
 
 ⌨ قابلیت جدید ربات ساخت لیست تبادلات است
 
@@ -1410,20 +1406,17 @@ https://telegram.me/inlinekeyboard_bot
 
 برای ارسال به کانال بدون via بر روی /novia کلیک کنید .
 /novia
-
-آموزش ویدیویی:
-https://telegram.me/mhrdev/834
 .",
                 'parse_mode'=>'HTML',
                 'reply_markup'=>json_encode([
                     'inline_keyboard'=>[
                         [['text'=>$ad_btn,'url'=>$ad_url]], 
-                      [['text'=>'به رایگان در تلگـ ـلیست کانال خود را ثبت کنید','url'=>'http://teleglist.com/?bot']],
+                      [['text'=>'سازنده ربات','url'=>'https://telegram.me/arshiahp']],
 
-                        [['text'=>'کانال اطلاع رسانی ربات','url'=>$links['mhrdev_c']]],
+                        [['text'=>'تماس با سازنده','url'=>https://telegram.me/arshiahp_bot]],
 
-                        [['text'=>'تماس با توسعه دهنده','url'=>'https://telegram.me/pp2007ws']],
-                        [['text'=>'ربات نظر سنجی در کانال','url'=>'https://telegram.me/chvotebot']]
+                        [['text'=>'ربات ضد اسپم ما','url'=>'https://telegram.me/Telespry_bot']],
+                        [['text'=>'رای دادن به این ربات','url'=>'https://telegram.me/storebot?start=inlinekey_bot']]
                     ]
                 ])
             ]));
