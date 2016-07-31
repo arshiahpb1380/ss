@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','220881773:AAGkt5QQ35id8ZU1mKTqdCFXxD1hE5UEW70');
+define('API_KEY','197246921:AAGY16pVMUiPnQjWGYEC-6Q5kPCO-AC9OWM');
 $the_admin_id = 46853604;
 
 file_put_contents("count",file_get_contents("count")+1);
@@ -439,7 +439,7 @@ https://telegram.me/joinchat/linke_dovom
 سپس ربات به شما کد می دهد .
 
 کدی که ربات به شما می دهد را با حالت اینلاین استفاده کنید.";
-        $imageID = '';
+        $imageID = 'AgADBAADQ6oxG_sS0QWIeBEDRy1gg9sVQxkABPxnx4JtVvzC6j4CAAEC';
         makeHTTPRequest('sendMessage',[
             'chat_id'=>$userID,
             'text'=>$helpTXT,
@@ -448,7 +448,7 @@ https://telegram.me/joinchat/linke_dovom
         makeHTTPRequest('sendPhoto',[
             'chat_id'=>$userID,
             'photo'=>$imageID,
-            'caption'=>''
+            'caption'=>'ابتدا صبر کنید تا لیست لود شود.''
         ]);
         die;
     }
@@ -1292,7 +1292,7 @@ https://telegram.me/storebot?start=inlinekey_bot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot220881773:AAGkt5QQ35id8ZU1mKTqdCFXxD1hE5UEW70/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot197246921:AAGY16pVMUiPnQjWGYEC-6Q5kPCO-AC9OWM/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
